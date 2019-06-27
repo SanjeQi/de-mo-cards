@@ -5,4 +5,18 @@ body {
 
   margin: 0;
   padding: 0;
+
+  background-image: linear-gradient(135deg, #abdcff 10%, #0396ff 100%);
+}
+
+h2 {
+  color: #2c3e50;
+  margin: 2rem 0 0 2rem;
+}
+
+.card-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  width: 100%;
 }
