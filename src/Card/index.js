@@ -1,4 +1,5 @@
 import React from "react";
+import classnames from "classnames";
 
 import "./styles.scss";
 
@@ -8,14 +9,9 @@ class Card extends React.Component {
   }
 
   render() {
-    let { href } = this.props;
-
-    href = href !== undefined ? href : null;
-
+    let { className } = this.props;
     return (
-      <a href={href} className="card-link">
-        <div className="card">{this.props.children}</div>
-      </a>
+      <div className={classnames("card", className)}>{this.props.children}</div>
     );
   }
 }
