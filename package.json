@@ -11,7 +11,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test": "ava",
+    "prepublish": "webpack -p --progress --colors --config webpack.config.publish.js",
+    "demo": "webpack -p --progress --colors --env=prod",
+    "dev": "webpack-dev-server --inline --env=dev"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,6 +45,7 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.35.0"
+    "webpack": "^4.35.0",
+    "webpack-dev-server": "^3.7.2"
   }
 }
