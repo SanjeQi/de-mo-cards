@@ -8,7 +8,8 @@ import {
   TaggedContentCard,
   FlippingCard,
   FlippingCardFront,
-  FlippingCardBack
+  FlippingCardBack,
+  RecipeCard
 } from "../src";
 
 import "./styles.scss";
@@ -23,6 +24,7 @@ const render = Component => {
 };
 
 const demo = () => {
+  console.log(RecipeCard);
   return (
     <div>
       <h2>User cards</h2>
@@ -204,6 +206,19 @@ const demo = () => {
             />
           </FlippingCardFront>
         </FlippingCard>
+      </div>
+      <div>
+        <h2>Recipe Cards</h2>
+        <div className="card-container">
+          <RecipeCard
+            href="https://github.com/sanjeqi"
+            thumbnail="https://i.imgur.com/VkHTicg.jpg"
+            title="Fluffy pancakes"
+            heart=":heart:"
+            time="21:37"
+            servings="huh"
+          />
+        </div>
       </div>
     </div>
   );
