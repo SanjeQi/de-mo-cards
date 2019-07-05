@@ -11,7 +11,11 @@ class FlippingCard extends React.Component {
   }
 
   render() {
-    return <Card className="flipping-card">{this.props.children}</Card>;
+    return (
+      <Card className="flipping-card-container">
+        <div className="flipping-card">{this.props.children}</div>
+      </Card>
+    );
   }
 }
 
