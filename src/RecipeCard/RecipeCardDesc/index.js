@@ -5,19 +5,24 @@ import "./styles.scss";
 
 class RecipeCardDesc extends React.Component {
   render() {
-    let { title, heart, time, servings } = this.props;
+    let { title, time, servings } = this.props;
     return (
       <div className="recipe-card-desc">
         <div className="title">{title}</div>
 
         <div className="heart">
-          <FontAwesome name="heart" />
-          {heart}
+          <FontAwesome name="heart-o" />
         </div>
 
-        <div className="time">{time}</div>
+        <div className="time">
+          <FontAwesome name="hourglass-half" />
+          {time}
+        </div>
 
-        <div className="servings">{servings}</div>
+        <div className="servings">
+          <FontAwesome name="user-o" />
+          {servings}
+        </div>
       </div>
     );
   }
