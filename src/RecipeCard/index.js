@@ -14,13 +14,11 @@ class RecipeCard extends React.Component {
   render() {
     let { href, thumbnail, title, time, servings } = this.props;
     return (
-      <a className="recipe-card-link" href={href}>
-        <Card className="recipe-card">
-          <RecipeCardContent thumbnail={thumbnail} />
+      <Card className="recipe-card">
+        <RecipeCardContent href={href} thumbnail={thumbnail} />
 
-          <RecipeCardDesc title={title} time={time} servings={servings} />
-        </Card>
-      </a>
+        <RecipeCardDesc title={title} time={time} servings={servings} />
+      </Card>
     );
   }
 }

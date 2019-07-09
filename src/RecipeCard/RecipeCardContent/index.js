@@ -4,13 +4,13 @@ import "./styles.scss";
 
 class RecipeCardContent extends React.Component {
   render() {
-    let { thumbnail } = this.props;
+    let { thumbnail, href } = this.props;
     return (
-      <div className="recipe-card-content">
+      <a href={href} className="recipe-card-content">
         <div className="thumbnail">
           <img src={thumbnail} />
         </div>
-      </div>
+      </a>
     );
   }
 }
