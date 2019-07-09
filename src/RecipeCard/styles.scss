@@ -2,16 +2,12 @@
   position: relative;
   display: flex;
   flex-flow: column;
-  background-color: #e9d1d1;
   width: 450px;
   overflow: hidden;
 
-  transition: 0.2s;
-
-  &:hover {
-    transform: scale(1.1);
-    opacity: 0.5;
-  }
+  font-size: 1rem;
+  color: #546e7a;
+  font-family: Verdana, sans-serif;
 }
 
 a.recipe-card-link {
