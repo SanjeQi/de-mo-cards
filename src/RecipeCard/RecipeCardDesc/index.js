@@ -5,12 +5,12 @@ import "./styles.scss";
 
 class RecipeCardDesc extends React.Component {
   render() {
-    let { title, time, servings } = this.props;
+    let { title, time, servings, likeCallback } = this.props;
     return (
       <div className="recipe-card-desc">
         <div className="title">{title}</div>
 
-        <a href={ } className="heart">
+        <a className="heart" onClick={likeCallback}>
           <FontAwesome name="heart-o" />
         </a>
 

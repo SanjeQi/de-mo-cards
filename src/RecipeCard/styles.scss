@@ -1,33 +1,17 @@
-.recipe-card-desc {
+.recipe-card {
+  position: relative;
   display: flex;
-  flex-flow: row;
-  justify-content: center;
+  flex-flow: column;
+  width: 450px;
+  overflow: hidden;
 
-  div,
-  button {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    padding: 1rem;
-    flex: 1 1 auto;
-    background-color: #fce4ec;
-    border: none;
+  font-size: 1rem;
+  background-color: #fce4ec;
+  color: #546e7a;
+  font-family: Verdana, sans-serif;
+}
 
-    &:hover {
-      background: #f8bbd0;
-      color: #455a64;
-    }
-  }
-
-  button:hover {
-    cursor: pointer;
-  }
-
-  .title {
-    font-size: 1.25rem;
-  }
-
-  span.fa:not(.fa-heart-o) {
-    margin-right: 0.25rem;
-  }
+a.recipe-card-link {
+  display: flex;
+  text-decoration: none;
 }

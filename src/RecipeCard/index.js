@@ -1,31 +1,31 @@
 import React from "react";
-import FontAwesome from "react-fontawesome";
+
+import Card from "../Card";
+import RecipeCardContent from "./RecipeCardContent";
+import RecipeCardDesc from "./RecipeCardDesc";
 
 import "./styles.scss";
 
-class RecipeCardDesc extends React.Component {
+class RecipeCard extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
-    let { title, time, servings } = this.props;
+    let { href, likeCallback, thumbnail, title, time, servings } = this.props;
     return (
-      <div className="recipe-card-desc">
-        <div className="title">{title}</div>
+      <Card className="recipe-card">
+        <RecipeCardContent href={href} thumbnail={thumbnail} />
 
-        <button className="heart">
-          <FontAwesome name="heart-o" />
-        </button>
-
-        <div className="time">
-          <FontAwesome name="hourglass-half" />
-          {time}
-        </div>
-
-        <div className="servings">
-          <FontAwesome name="user-o" />
-          {servings}
-        </div>
-      </div>
+        <RecipeCardDesc
+          title={title}
+          time={time}
+          servings={servings}
+          likeCallback={likeCallback}
+        />
+      </Card>
     );
   }
 }
 
-export default RecipeCardDesc;
+export default RecipeCard;
