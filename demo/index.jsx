@@ -24,7 +24,6 @@ const render = Component => {
 };
 
 const demo = () => {
-  console.log(RecipeCard);
   return (
     <div>
       <h2>User cards</h2>
@@ -52,7 +51,7 @@ const demo = () => {
         />
         <UserCard
           cardClass="float"
-          href="https://github.com/nukeop"
+          href="https://github.com/SanjeQi"
           header="https://i.imgur.com/vRAtM3i.jpg"
           avatar="https://i.imgur.com/XJxqvsU.jpg"
           name="Frank Hepsfield"
@@ -60,7 +59,7 @@ const demo = () => {
         />
         <UserCard
           cardClass="float"
-          href="https://github.com/nukeop"
+          href="https://github.com/SanjeQi"
           header="https://i.imgur.com/p5yXGQk.jpg"
           avatar="https://i.imgur.com/kFkyYkZ.jpg"
           name="Joseph Cheps"
@@ -93,7 +92,7 @@ const demo = () => {
           productName="Headphones"
           description="Donec lectus nulla, molestie aliquam nisl vitae, tempor placerat magna. Morbi dignissim in felis vel aliquet."
           rating={3}
-          url="https://github.com/nukeop"
+          url="https://github.com/SanjeQi"
         />
         <ProductCard
           photos={[
@@ -105,27 +104,27 @@ const demo = () => {
           productName="Cupcake"
           description="Nullam velit leo, pulvinar non metus feugiat, pharetra ornare enim. Vivamus ac quam a purus venenatis fringilla."
           rating={5}
-          url="https://github.com/nukeop"
+          url="https://github.com/SanjeQi"
         />
       </div>
       <h2>Tagged content cards</h2>
       <div className="card-container">
         <TaggedContentCard
-          href="https://github.com/nukeop"
+          href="https://github.com/SanjeQi"
           thumbnail="https://i.imgur.com/yCch7GN.jpg"
           title="Cheesecake"
           description="a cake with raspberries"
           tags={["food", "cake", "fruits"]}
         />
         <TaggedContentCard
-          href="https://github.com/nukeop"
+          href="https://github.com/SanjeQi"
           thumbnail="https://i.imgur.com/57I3RAq.jpg"
           title="Cupcakes"
           description="a bite-sized cake"
           tags={["food", "cake", "icing"]}
         />
         <TaggedContentCard
-          href="https://github.com/nukeop"
+          href="https://github.com/SanjeQi"
           thumbnail="https://i.imgur.com/H0f0R6p.jpg"
           title="Burger"
           description="the cornerstone of every nutritious breakfast"
@@ -211,27 +210,30 @@ const demo = () => {
       <h2>Recipe Cards</h2>
       <div className="card-container">
         <RecipeCard
-          href="https://github.com/sanjeqi"
+          href="https://github.com/nekonee"
           thumbnail="https://i.imgur.com/VkHTicg.jpg"
           title="Fluffy pancakes"
           time="0:30"
           servings="3-5"
+          likeCallback={() => alert("You added Fluffy pancakes to favourites")}
         />
 
         <RecipeCard
-          href="https://github.com/sanjeqi"
+          href="https://github.com/nekonee"
           thumbnail="https://i.imgur.com/0308iuN.jpg"
           title="Cupcakes"
           time="1:30"
           servings="4-6"
+          likeCallback={() => alert("You added Cupcakes to favourites")}
         />
 
         <RecipeCard
-          href="https://github.com/sanjeqi"
+          href="https://github.com/nekonee"
           thumbnail="https://i.imgur.com/s9oR6BE.jpg"
           title="Macarons"
           time="2:00"
           servings="7-10"
+          likeCallback={() => alert("You added Macarons to favourites")}
         />
       </div>
     </div>

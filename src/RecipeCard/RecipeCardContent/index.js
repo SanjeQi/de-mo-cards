@@ -8,7 +8,7 @@ class RecipeCardContent extends React.Component {
     return (
       <a href={href} className="recipe-card-content">
         <div className="thumbnail">
-          <img src={thumbnail} />
+          <div style={{ backgroundImage: `url(${thumbnail})` }} />
         </div>
       </a>
     );
