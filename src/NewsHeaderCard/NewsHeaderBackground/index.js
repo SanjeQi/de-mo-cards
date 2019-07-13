@@ -7,6 +7,8 @@ class NewsHeaderBackground extends React.Component {
     let { thumbnail } = this.props;
     return (
       <div className="news-header-background">
+        <div className="overlay" />
+
         <div className="thumbnail">
           <div style={{ backgroundImage: `url(${thumbnail})` }} />
         </div>
