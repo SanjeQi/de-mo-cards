@@ -14,6 +14,7 @@ class ProductCard extends React.Component {
 
   render() {
     let { photos, price, productName, description, rating, url } = this.props;
+
     return (
       <Card className="product-card">
         <ProductCardGallery photos={photos} />
