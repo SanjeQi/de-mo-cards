@@ -10,7 +10,9 @@ import {
   FlippingCardFront,
   FlippingCardBack,
   RecipeCard,
-  NewsHeaderCard
+  NewsHeaderCard,
+  CryptoCard,
+  PaymentCard
 } from "../src";
 
 import "./styles.scss";
@@ -260,6 +262,82 @@ const demo = () => {
           title="Cool looking test tubes"
           author="Daily Science"
           date="Mar 2, 2018"
+        />
+      </div>
+
+      <h2>Cryptocurrency cards</h2>
+      <div
+        className="card-container"
+        style={{
+          background: "linear-gradient(to top, #141e30, #243b55)",
+          padding: "4rem 1rem"
+        }}
+      >
+        <CryptoCard
+          currencyName="Bitcoin"
+          currencyPrice="$8850.32"
+          icon={
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/2000px-Bitcoin.svg.png" />
+          }
+          currencyShortName="BTC"
+          trend="(8.54%) $563.47"
+          trendDirection={1}
+          chartData={[
+            9200,
+            5720,
+            8100,
+            6734,
+            7054,
+            7832,
+            6421,
+            7383,
+            8697,
+            8850
+          ]}
+        />
+
+        <CryptoCard
+          currencyName="Ethereum"
+          currencyPrice="$766.12"
+          icon={
+            <img src="https://maxcdn.icons8.com/Share/icon/color/Logos/ethereum1600.png" />
+          }
+          currencyShortName="ETH"
+          trend="(7.32%) $14.94"
+          trendDirection={1}
+          chartData={[760, 500, 800, 670, 820, 620, 796, 766]}
+          chartColor="#9b59b6"
+        />
+
+        <CryptoCard
+          currencyName="Litecoin"
+          currencyPrice="$137.92"
+          icon={
+            <img src="http://icons.iconarchive.com/icons/blackvariant/button-ui-requests-6/1024/LiteCoin-icon.png" />
+          }
+          currencyShortName="LTC"
+          trend="(-5.12%) $6.34"
+          trendDirection={-1}
+          chartData={[90, 120, 115, 85, 75, 92, 70, 101, 111, 137]}
+          chartColor="#ecf0f1"
+        />
+      </div>
+
+      <h2>Payment cards</h2>
+      <div className="card-container">
+        <PaymentCard
+          issuerIcon="https://i.imgur.com/MulWZzk.png"
+          number="4445 8509 0753 1365"
+        />
+        <PaymentCard
+          background="linear-gradient( 135deg, #65FDF0 10%, #1D6FA3 100%)"
+          issuerIcon="https://i.imgur.com/31vser1g.png"
+          number="5458 8074 7691 1254"
+        />
+        <PaymentCard
+          background="linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%)"
+          issuerIcon="https://i.imgur.com/CRdoJbX.png"
+          number="3421 7270 0864 956"
         />
       </div>
     </div>
