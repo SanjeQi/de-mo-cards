@@ -18,7 +18,8 @@ const defaultBackground = "linear-gradient( 135deg, #FF9D6C 10%, #BB4E75 100%)";
 const PaymentCardBackground = props => {
   let { background, backgroundPattern } = props;
 
-  let pattern = backgroundPattern || "worldMap";
+  let pattern =
+    backgroundPattern === undefined ? "worldMap" : backgroundPattern;
 
   return (
     <div
