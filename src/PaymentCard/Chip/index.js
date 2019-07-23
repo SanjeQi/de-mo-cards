@@ -4,7 +4,11 @@ import PropTypes from "prop-types";
 import styles from "./styles.scss";
 
 const Chip = props => {
-  return <span className="chip" />;
+  return (
+    <div className="chip-container">
+      <span className="chip" />
+    </div>
+  );
 };
 
 Chip.propTypes = {};

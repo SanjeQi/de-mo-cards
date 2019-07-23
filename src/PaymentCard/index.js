@@ -43,7 +43,7 @@ PaymentCard.propTypes = {
     .isRequired,
   number: PropTypes.string.isRequired,
   date: PropTypes.string,
-  name: PropTypes.name
+  name: PropTypes.string
 };
 
 export default PaymentCard;
