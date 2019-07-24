@@ -12,7 +12,8 @@ import {
   RecipeCard,
   NewsHeaderCard,
   CryptoCard,
-  PaymentCard
+  PaymentCard,
+  DropdownCard
 } from "../src";
 
 import "./styles.scss";
@@ -29,6 +30,13 @@ const render = Component => {
 const demo = () => {
   return (
     <div>
+      <h2>Links</h2>
+
+      <div className="links">
+        <a href="https://www.npmjs.com/package/react-ui-cards">npm</a> |
+        <a href="https://github.com/SanjeQi/react-ui-cards">Github</a>
+      </div>
+
       <h2>User cards</h2>
       <div className="card-container">
         <UserCard
@@ -350,6 +358,11 @@ const demo = () => {
           name="Jotaro Kujo"
           cvv="880"
         />
+      </div>
+
+      <h2>Dropdown cards</h2>
+      <div className="card-container">
+        <DropdownCard />
       </div>
     </div>
   );
