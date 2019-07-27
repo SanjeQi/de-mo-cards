@@ -33,8 +33,8 @@ const demo = () => {
       <h2>Links</h2>
 
       <div className="links">
-        <a href="https://www.npmjs.com/package/react-ui-cards">npm</a> |
-        <a href="https://github.com/SanjeQi/react-ui-cards">Github</a>
+        <a href="https://www.npmjs.com/package/de-mo-cards">npm</a> |
+        <a href="https://github.com/SanjeQi/de-mo-cards">Github</a>
       </div>
 
       <h2>User cards</h2>
@@ -221,7 +221,7 @@ const demo = () => {
       <h2>Recipe Cards</h2>
       <div className="card-container">
         <RecipeCard
-          href="https://github.com/nekonee"
+          href="https://github.com/SanjeQi"
           thumbnail="https://i.imgur.com/VkHTicg.jpg"
           title="Fluffy pancakes"
           time="0:30"
@@ -230,7 +230,7 @@ const demo = () => {
         />
 
         <RecipeCard
-          href="https://github.com/nekonee"
+          href="https://github.com/SanjeQi"
           thumbnail="https://i.imgur.com/0308iuN.jpg"
           title="Cupcakes"
           time="1:30"
@@ -239,7 +239,7 @@ const demo = () => {
         />
 
         <RecipeCard
-          href="https://github.com/nekonee"
+          href="https://github.com/SanjeQi"
           thumbnail="https://i.imgur.com/s9oR6BE.jpg"
           title="Macarons"
           time="2:00"
@@ -251,21 +251,21 @@ const demo = () => {
       <h2>News headers cards</h2>
       <div className="card-container">
         <NewsHeaderCard
-          href="https://github.com/nekonee"
+          href="https://github.com/SanjeQi"
           thumbnail="https://i.imgur.com/rLFk5nd.jpg"
           title="Polish mountaineers on the top"
           author="Daily Sport"
           date="Feb 2, 2018"
         />
         <NewsHeaderCard
-          href="https://github.com/nekonee"
+          href="https://github.com/SanjeQi"
           thumbnail="https://i.imgur.com/1fk52PJ.jpg"
           title="Most poisonous dishes you must avoid"
           author="Daily Health"
           date="Jan 2, 2018"
         />
         <NewsHeaderCard
-          href="https://github.com/nekonee"
+          href="https://github.com/SanjeQi"
           thumbnail="https://i.imgur.com/n5Wg2Po.jpg"
           title="Cool looking test tubes"
           author="Daily Science"

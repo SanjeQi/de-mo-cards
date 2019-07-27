@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../../Card";
+import PropTypes from "prop-types";
 
 import ArrowUp from "./ArrowUp";
 import ArrowDown from "./ArrowDown";
@@ -12,32 +13,30 @@ class Arrow extends React.Component {
 
     //toggled= true or false
     this.state = {
-      toggled: this.props.toggled
+      toggled: false
     };
   }
 
-  componentWillReceiveProps(nextProps) {
-    this.setState({
-      toggled: nextProps.toggled
+  handleClick() {
+    this.setState(prevState => {
+      return { toggled: !prevState.toggled };
     });
   }
 
-  handleClick() {
-    if (this.state.toggled === false) {
-      this.setState({
-        toggled: true
-      });
-    } else if (this.state.toggled === true) {
-      this.setState({
-        toggled: false
-      });
-    }
-  }
-
   render() {
-    let { toggled } = this.props;
-
-    return <div className="toggle-root" />;
+    if (!this.state.toggled) {
+      return (
+        <button className="toggle-root" onClick={this.handleClick.bind(this)}>
+          <ArrowDown />
+        </button>
+      );
+    } else {
+      return (
+        <button className="toggle-root" onClick={this.handleClick.bind(this)}>
+          <ArrowUp />
+        </button>
+      );
+    }
   }
 }
 
