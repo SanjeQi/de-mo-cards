@@ -26,15 +26,15 @@ class Arrow extends React.Component {
   render() {
     if (!this.state.toggled) {
       return (
-        <button className="toggle-root" onClick={this.handleClick.bind(this)}>
+        <a className="toggle-root" onClick={this.handleClick.bind(this)}>
           <ArrowDown />
-        </button>
+        </a>
       );
     } else {
       return (
-        <button className="toggle-root" onClick={this.handleClick.bind(this)}>
+        <a className="toggle-root" onClick={this.handleClick.bind(this)}>
           <ArrowUp />
-        </button>
+        </a>
       );
     }
   }
