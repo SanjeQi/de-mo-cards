@@ -12,7 +12,14 @@ class ToggledCard extends React.Component {
     super(props);
   }
   render() {
-    return <Card className="toggled-root" />;
+    let { email, phone, infoFirst, infoSecond } = this.props;
+    return (
+      <Card className="toggled-root">
+        <Email email={email} />
+        <Phone phone={phone} />
+        <Info infoFirst={infoFirst} infoSecond={infoSecond} />
+      </Card>
+    );
   }
 }
 
