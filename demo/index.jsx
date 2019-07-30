@@ -362,7 +362,14 @@ const demo = () => {
 
       <h2>Dropdown cards</h2>
       <div className="card-container">
-        <DropdownCard />
+        <DropdownCard
+          name="Jan"
+          surname="Pawel II"
+          email="topkek"
+          phone="21371488"
+          infoFirst="k"
+          infoSecond="got it"
+        />
       </div>
     </div>
   );
