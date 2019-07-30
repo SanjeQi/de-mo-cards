@@ -17,11 +17,7 @@ class ToggledCard extends React.Component {
       <Card className="toggled-root">
         <Email email={email} />
         <Phone phone={phone} />
-        <Info
-          style={infoSecond ? { flexFlow: "column" } : { fontSize: "3rem" }}
-          infoFirst={infoFirst}
-          infoSecond={infoSecond}
-        />
+        <Info infoFirst={infoFirst} infoSecond={infoSecond} />
       </Card>
     );
   }
