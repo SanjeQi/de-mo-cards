@@ -22,22 +22,42 @@ class DropdownCard extends React.Component {
   }
 
   render() {
-    let { name, surname, email, phone, info, messageOnPanel } = this.props;
+    let {
+      name,
+      surname,
+      email,
+      phone,
+      info,
+      messageOnToggled,
+      messageOnUntoggled
+    } = this.props;
     return (
       <Card className="dropdown-card">
         <NameSurname name={name} surname={surname} />
-        <Arrow
-          onClick={this.toggleArrow.bind(this)}
-          position={this.state.arrowToggled}
-        />
 
-        {this.state.arrowToggled === true ? (
-          <div className="togg">
-            <ToggledCard email={email} phone={phone} info={info} />{" "}
-          </div>
-        ) : (
-          <div className="message">{messageOnPanel}</div>
-        )}
+        <div className="toggling">
+          {this.state.arrowToggled === true ? (
+            <React.Fragment>
+              <button className="button">
+                <Arrow
+                  onClick={this.toggleArrow.bind(this)}
+                  position={this.state.arrowToggled}
+                  message={messageOnToggled}
+                />
+              </button>
+
+              <ToggledCard email={email} phone={phone} info={info} />
+            </React.Fragment>
+          ) : (
+            <button className="button">
+              <Arrow
+                onClick={this.toggleArrow.bind(this)}
+                position={this.state.arrowToggled}
+                message={messageOnUntoggled}
+              />
+            </button>
+          )}
+        </div>
       </Card>
     );
   }

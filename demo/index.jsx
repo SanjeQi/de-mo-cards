@@ -221,7 +221,7 @@ const demo = () => {
       <h2>Recipe Cards</h2>
       <div className="card-container">
         <RecipeCard
-          href="https://github.com/SanjeQi"
+          href="https://github.com/nekonee"
           thumbnail="https://i.imgur.com/VkHTicg.jpg"
           title="Fluffy pancakes"
           time="0:30"
@@ -230,7 +230,7 @@ const demo = () => {
         />
 
         <RecipeCard
-          href="https://github.com/SanjeQi"
+          href="https://github.com/nekonee"
           thumbnail="https://i.imgur.com/0308iuN.jpg"
           title="Cupcakes"
           time="1:30"
@@ -239,7 +239,7 @@ const demo = () => {
         />
 
         <RecipeCard
-          href="https://github.com/SanjeQi"
+          href="https://github.com/nekonee"
           thumbnail="https://i.imgur.com/s9oR6BE.jpg"
           title="Macarons"
           time="2:00"
@@ -251,21 +251,21 @@ const demo = () => {
       <h2>News headers cards</h2>
       <div className="card-container">
         <NewsHeaderCard
-          href="https://github.com/SanjeQi"
+          href="https://github.com/nekonee"
           thumbnail="https://i.imgur.com/rLFk5nd.jpg"
           title="Polish mountaineers on the top"
           author="Daily Sport"
           date="Feb 2, 2018"
         />
         <NewsHeaderCard
-          href="https://github.com/SanjeQi"
+          href="https://github.com/nekonee"
           thumbnail="https://i.imgur.com/1fk52PJ.jpg"
           title="Most poisonous dishes you must avoid"
           author="Daily Health"
           date="Jan 2, 2018"
         />
         <NewsHeaderCard
-          href="https://github.com/SanjeQi"
+          href="https://github.com/nekonee"
           thumbnail="https://i.imgur.com/n5Wg2Po.jpg"
           title="Cool looking test tubes"
           author="Daily Science"
@@ -363,12 +363,31 @@ const demo = () => {
       <h2>Dropdown cards</h2>
       <div className="card-container">
         <DropdownCard
+          name="Justin"
+          surname="Case"
+          email="justin@case.com"
+          phone="123456789"
+          info="CEO"
+          messageOnToggled="Details"
+          messageOnUntoggled="Show less..."
+        />
+        <DropdownCard
+          name="Kira"
+          surname="Yoshikage"
+          email="kqueen@morioh.jp"
+          phone="324354657"
+          info="Asset manager"
+          messageOnToggled="Click here for more..."
+          messageOnUntoggled="Untoggled"
+        />
+        <DropdownCard
           name="Jan"
-          surname="Pawel II"
-          email="topkek"
+          surname="Pawel 2"
+          email="jp2@vatican.com"
           phone="21371488"
-          infoFirst="k"
-          infoSecond="got it"
+          info="Pope"
+          messageOnToggled="Habemus papam"
+          messageOnUntoggled="Cardinale Wojtyla"
         />
       </div>
     </div>

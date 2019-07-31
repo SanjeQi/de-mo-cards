@@ -13,11 +13,18 @@ class Arrow extends React.Component {
   }
 
   render() {
-    let { onClick, position } = this.props;
-    console.log(position);
+    let { onClick, position, message } = this.props;
     return (
       <a onClick={onClick} className="toggle-root">
-        {position === false ? <ArrowDown /> : <ArrowUp />}
+        {position === false ? (
+          <React.Fragment>
+            <ArrowDown /> {message}
+          </React.Fragment>
+        ) : (
+          <React.Fragment>
+            <ArrowUp /> {message}
+          </React.Fragment>
+        )}
       </a>
     );
   }
