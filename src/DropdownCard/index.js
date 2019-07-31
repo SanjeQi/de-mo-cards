@@ -22,15 +22,7 @@ class DropdownCard extends React.Component {
   }
 
   render() {
-    let {
-      name,
-      surname,
-      position,
-      email,
-      phone,
-      infoFirst,
-      infoSecond
-    } = this.props;
+    let { name, surname, email, phone, infoFirst, infoSecond } = this.props;
     return (
       <Card className="dropdown-card">
         <NameSurname name={name} surname={surname} />
@@ -38,7 +30,7 @@ class DropdownCard extends React.Component {
           onClick={this.toggleArrow.bind(this)}
           position={this.state.arrowToggled}
         />
-        {position === false ? (
+        {this.state.arrowToggled === false ? (
           <ToggledCard
             email={email}
             phone={phone}
@@ -46,7 +38,7 @@ class DropdownCard extends React.Component {
             infoSecond={infoSecond}
           />
         ) : (
-          <div className="empty" />
+          <div className="empty">dupa cyce</div>
         )}
         ;
       </Card>

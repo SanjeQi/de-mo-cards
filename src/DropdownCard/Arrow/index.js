@@ -20,21 +20,6 @@ class Arrow extends React.Component {
         {position === false ? <ArrowDown /> : <ArrowUp />}
       </a>
     );
-
-    // if(this.props.position === false){
-    //   return(
-    //     <a onClick={onClick} className='toggle-root'>
-    //       <ArrowDown/>
-    //     </a>
-    //   );
-    // }
-    // else{
-    //   return(
-    //     <a className='toggle-root'>
-    //       <ArrowUp/>
-    //     </a>
-    //   );
-    // }
   }
 }
 
