@@ -7,7 +7,7 @@ class NameSurname extends React.Component {
     let { name, surname } = this.props;
 
     return (
-      <div className="root">
+      <div className="NSroot">
         <div className="name">{name}</div>
 
         <div className="surname">{surname}</div>

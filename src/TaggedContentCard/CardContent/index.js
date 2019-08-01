@@ -16,7 +16,11 @@ class CardContent extends React.Component {
           <div className="description">{description}</div>
           <div className="tags">
             {tags.map((tag, i) => {
-              return <span className="tag">{tag}</span>;
+              return (
+                <span className="tag">
+                  {typeof tag === "function" ? tag() : tag}
+                </span>
+              );
             })}
           </div>
         </div>

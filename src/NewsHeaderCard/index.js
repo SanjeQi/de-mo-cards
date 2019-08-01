@@ -12,13 +12,13 @@ class NewsHeaderCard extends React.Component {
   }
 
   render() {
-    let { href, title, author, date, thumbnail } = this.props;
+    let { href, title, author, date, thumbnail, tags } = this.props;
     return (
       <a href={href}>
         <Card className="news-header-card">
           <NewsHeaderBackground thumbnail={thumbnail} />
 
-          <NewsHeader title={title} author={author} date={date} />
+          <NewsHeader title={title} author={author} date={date} tags={tags} />
         </Card>
       </a>
     );
