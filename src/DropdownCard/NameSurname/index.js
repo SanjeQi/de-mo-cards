@@ -4,10 +4,15 @@ import styles from "./styles.scss";
 
 class NameSurname extends React.Component {
   render() {
-    let { name, surname } = this.props;
+    let { name, surname, bgColor } = this.props;
 
     return (
-      <div className="NSroot">
+      <div
+        className="NSroot"
+        style={{
+          backgroundColor: `rgb(${bgColor})`
+        }}
+      >
         <div className="name">{name}</div>
 
         <div className="surname">{surname}</div>
