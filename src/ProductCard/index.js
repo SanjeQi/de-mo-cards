@@ -13,7 +13,15 @@ class ProductCard extends React.Component {
   }
 
   render() {
-    let { photos, price, productName, description, rating, url } = this.props;
+    let {
+      photos,
+      price,
+      productName,
+      description,
+      buttonText,
+      rating,
+      url
+    } = this.props;
 
     return (
       <Card className="product-card">
@@ -22,6 +30,7 @@ class ProductCard extends React.Component {
         <ProductCardDescription
           productName={productName}
           description={description}
+          buttonText={buttonText}
           rating={rating}
           url={url}
         />
