@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 import Card from "../Card";
 import ProductCardDescription from "./ProductCardDescription";
 import ProductCardGallery from "./ProductCardGallery";
@@ -38,5 +38,14 @@ class ProductCard extends React.Component {
     );
   }
 }
+
+ProductCard.propTypes = {
+  photos: PropTypes.arrayOf(PropTypes.string),
+  price: PropTypes.number,
+  productName: PropTypes.string,
+  description: PropTypes.string,
+  buttonText: PropTypes.string,
+  url: PropTypes.string
+};
 
 export default ProductCard;
